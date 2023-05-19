@@ -13,8 +13,4 @@ const router = new Router({
   ]
 });
 
-new Vue({
-  router,
-}).$mount('#app');
-
-// app.mount('#app')
+export default router;
