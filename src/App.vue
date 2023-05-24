@@ -1,28 +1,33 @@
 <template>
- <div id="app">
-<SiteNavbar />
+  <div class="app-container">
+    <section id="header">
+      <SiteNavbar/>
+    </section>
+    <section id="main">
+      <router-view/>
+    </section>
+    <section id="footer">
+<!--      CONTENT FOOTER-->
+    </section>
 
-
-<div class="auth-wrapper">
-  <div class="auth-inner">
-    <router-view />
-  </div>
-  </div>
   </div>
 </template>
 
 <script>
 import SiteNavbar from './components/SiteNavbar.vue'
+
 export default {
   name: 'App',
-  components:{
+  components: {
     SiteNavbar,
 
   }
- 
+
 }
 </script>
 
-<style>
+<style lang="scss">
+.app-container {
 
+}
 </style>

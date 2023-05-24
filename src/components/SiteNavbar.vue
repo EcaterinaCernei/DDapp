@@ -1,24 +1,24 @@
 <template>
   <nav class="navbar navbar-expand navbar-light fixed-top">
-   <div class="container">
-   <a href="#" class="navbar-brand">Home</a>
-   <div class="collapse navbar-collapse">
-   <ul class="navbar-nav ml-auto">
-   <li class="nav-item">
-   <a href="a" class="nav-link">Login</a>
-   </li>
-   <li class="nav-item">
-   <a href="#" class="nav-link">Sign up</a>
-   </li>
-   </ul>
-  </div>
-  </div>
-</nav>
+    <div class="container">
+      <router-link to="/" class="navbar-brand">Home</router-link>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <router-link to="/login" class="nav-link">Login</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/register" class="nav-link">Sign up</router-link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </template>
 
 
 <script>
 export default {
-    name: 'SiteNavbar'
+  name: 'SiteNavbar'
 }
 </script>
